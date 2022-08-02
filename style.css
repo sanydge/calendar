@@ -1,1 +1,37 @@
+html{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+ul{
+    list-style-type: none;
+}
+body{
+    font-family: Padauk, serif;
+}
+.month{
+    font-size: x-large;
+}
+.weekdays{
+    margin: 0;
+    padding: 10px 0;
+    background-color: white;
+}
+.weekdays li{
+    display: inline-block;
+    width: 13%;
+    text-align: center;
+    font-size: large;
+}
+.days{
+    padding: 10px 0;
+    margin: 0;
 
+
+}
+.days li{
+    display: inline-block;
+    width: 13%;
+    text-align: center;
+}

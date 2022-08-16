@@ -11,7 +11,7 @@ const renderCalendar=()=>{
 
 
     document.querySelector(".date h1").innerHTML = months[date.getMonth()];
-    document.querySelector(".date p").innerHTML = date.toDateString();
+    document.querySelector(".date p").innerHTML = date.getFullYear();
 
     let days="";
 
@@ -20,8 +20,12 @@ const renderCalendar=()=>{
     }
 
     for(let a=1; a<=lastDay; a++){
+        if(a===new Date().getDate()&&date.getMonth()===new Date().getMonth()){
+            days+=`<div class="today">${a}</div>`;
+        }else{
+            days+=`<div>${a}</div>`;
+        }
 
-        days+=`<div>${a}</div>`;
     }
 
     for(let c=1; c<=nextDays;c++){

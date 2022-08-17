@@ -5,7 +5,7 @@ const renderCalendar=()=>{
     const months = ["January", "February", "March", "April", "May","June", "July", "August", "September", "October", "November", "December"];
     const lastDay = new Date(date.getFullYear(), date.getMonth()+1, 0).getDate();
     const previousLastDay = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
-    const firstDayIndex = date.getDay() - 1;
+    const firstDayIndex = date.getDay() - 2;
     const lastDayIndex = new Date(date.getFullYear(), date.getMonth()+1, 0).getDay();
     const nextDays = 7 - lastDayIndex - 1;
 
